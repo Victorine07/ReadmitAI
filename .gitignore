@@ -1,0 +1,30 @@
+# Environment
+.env
+venv/
+.venv/
+
+# Data — never commit raw or processed MIMIC data
+data/raw/
+data/processed/
+*.csv
+*.parquet
+*.h5
+*.pkl
+
+# Model weights — large binaries
+models/weights/
+*.pt
+*.bin
+*.safetensors
+
+# Evaluation outputs
+eval/results.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Notebooks (outputs only — keep .ipynb structure)
+.ipynb_checkpoints/
