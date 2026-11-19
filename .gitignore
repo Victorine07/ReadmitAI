@@ -10,12 +10,17 @@ data/processed/
 *.parquet
 *.h5
 *.pkl
+*.zip
 
 # Model weights — large binaries
 models/weights/
 *.pt
 *.bin
 *.safetensors
+
+# Personal — not for public repo
+INTERVIEW_PREP.md
+README_copy.md
 
 # Evaluation outputs
 eval/results.json
