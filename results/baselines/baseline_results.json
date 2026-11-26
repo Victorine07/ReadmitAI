@@ -1,0 +1,684 @@
+{
+  "feature_count_with_history": 630,
+  "models": {
+    "logistic_regression": {
+      "selected_params": {
+        "C": 0.01,
+        "max_iter": 2000,
+        "val_auroc": 0.6674
+      },
+      "metrics": {
+        "auroc": 0.6605,
+        "auroc_95ci": [
+          0.6443,
+          0.6768
+        ],
+        "auprc": 0.2093,
+        "auprc_95ci": [
+          0.1868,
+          0.2337
+        ],
+        "brier": 0.0971,
+        "brier_95ci": [
+          0.0928,
+          0.1011
+        ]
+      },
+      "subgroups": {
+        "race": [
+          {
+            "subgroup_col": "race",
+            "subgroup": "Caucasian",
+            "n": 11066,
+            "positives": 1290,
+            "pos_rate": 0.1166,
+            "auroc": 0.6608839556452125,
+            "auprc": 0.21656800488195707
+          },
+          {
+            "subgroup_col": "race",
+            "subgroup": "AfricanAmerican",
+            "n": 2883,
+            "positives": 330,
+            "pos_rate": 0.1145,
+            "auroc": 0.6488100748970315,
+            "auprc": 0.1982999941645296
+          },
+          {
+            "subgroup_col": "race",
+            "subgroup": "missing",
+            "n": 317,
+            "positives": 16,
+            "pos_rate": 0.0505,
+            "auroc": 0.6634136212624584,
+            "auprc": 0.08329117153964029
+          },
+          {
+            "subgroup_col": "race",
+            "subgroup": "Hispanic",
+            "n": 308,
+            "positives": 29,
+            "pos_rate": 0.0942,
+            "auroc": 0.717711036954641,
+            "auprc": 0.2177543243469585
+          },
+          {
+            "subgroup_col": "race",
+            "subgroup": "Other",
+            "n": 220,
+            "positives": 18,
+            "pos_rate": 0.0818,
+            "auroc": 0.5786578657865786,
+            "auprc": 0.13286711891183256
+          },
+          {
+            "subgroup_col": "race",
+            "subgroup": "Asian",
+            "n": 104,
+            "positives": 12,
+            "pos_rate": 0.1154,
+            "auroc": 0.7653985507246377,
+            "auprc": 0.2610241916142972
+          }
+        ],
+        "gender": [
+          {
+            "subgroup_col": "gender",
+            "subgroup": "Female",
+            "n": 8080,
+            "positives": 964,
+            "pos_rate": 0.1193,
+            "auroc": 0.6664947963679535,
+            "auprc": 0.22679400858543292
+          },
+          {
+            "subgroup_col": "gender",
+            "subgroup": "Male",
+            "n": 6818,
+            "positives": 731,
+            "pos_rate": 0.1072,
+            "auroc": 0.6531670171478451,
+            "auprc": 0.18848543034620788
+          }
+        ],
+        "age": [
+          {
+            "subgroup_col": "age",
+            "subgroup": "[70-80)",
+            "n": 3915,
+            "positives": 500,
+            "pos_rate": 0.1277,
+            "auroc": 0.644716251830161,
+            "auprc": 0.21791242698643973
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[60-70)",
+            "n": 3382,
+            "positives": 382,
+            "pos_rate": 0.113,
+            "auroc": 0.6409485165794065,
+            "auprc": 0.19616539810056438
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[50-60)",
+            "n": 2479,
+            "positives": 263,
+            "pos_rate": 0.1061,
+            "auroc": 0.6859068509697877,
+            "auprc": 0.23757604103016264
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[80-90)",
+            "n": 2439,
+            "positives": 297,
+            "pos_rate": 0.1218,
+            "auroc": 0.6300823359646889,
+            "auprc": 0.1882907488376372
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[40-50)",
+            "n": 1374,
+            "positives": 115,
+            "pos_rate": 0.0837,
+            "auroc": 0.6522429809717857,
+            "auprc": 0.14949307649668228
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[30-40)",
+            "n": 548,
+            "positives": 57,
+            "pos_rate": 0.104,
+            "auroc": 0.7269803837495981,
+            "auprc": 0.22887678390953645
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[90-100)",
+            "n": 369,
+            "positives": 31,
+            "pos_rate": 0.084,
+            "auroc": 0.5357892727619775,
+            "auprc": 0.10785074611670219
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[20-30)",
+            "n": 276,
+            "positives": 47,
+            "pos_rate": 0.1703,
+            "auroc": 0.8009848555235529,
+            "auprc": 0.41653022699869513
+          }
+        ]
+      },
+      "rare_code_buckets": [
+        {
+          "rarest_cat_train_freq_bucket": "<20 (dropped by featurizer)",
+          "n": 591,
+          "positives": 63,
+          "pos_rate": 0.1066,
+          "auroc": 0.6861471861471861
+        },
+        {
+          "rarest_cat_train_freq_bucket": "20-100",
+          "n": 1465,
+          "positives": 142,
+          "pos_rate": 0.0969,
+          "auroc": 0.6664803636634623
+        },
+        {
+          "rarest_cat_train_freq_bucket": "101-1000",
+          "n": 7303,
+          "positives": 871,
+          "pos_rate": 0.1193,
+          "auroc": 0.658264182817257
+        },
+        {
+          "rarest_cat_train_freq_bucket": ">1000",
+          "n": 5539,
+          "positives": 619,
+          "pos_rate": 0.1118,
+          "auroc": 0.6581235141915232
+        }
+      ]
+    },
+    "xgboost": {
+      "selected_params": {
+        "max_depth": 6,
+        "min_child_weight": 1,
+        "best_iteration": 150,
+        "val_auroc": 0.6897
+      },
+      "metrics": {
+        "auroc": 0.6757,
+        "auroc_95ci": [
+          0.6602,
+          0.6915
+        ],
+        "auprc": 0.2264,
+        "auprc_95ci": [
+          0.2052,
+          0.2505
+        ],
+        "brier": 0.096,
+        "brier_95ci": [
+          0.0916,
+          0.0998
+        ]
+      },
+      "subgroups": {
+        "race": [
+          {
+            "subgroup_col": "race",
+            "subgroup": "Caucasian",
+            "n": 11066,
+            "positives": 1290,
+            "pos_rate": 0.1166,
+            "auroc": 0.6759310889506338,
+            "auprc": 0.23663006884259918
+          },
+          {
+            "subgroup_col": "race",
+            "subgroup": "AfricanAmerican",
+            "n": 2883,
+            "positives": 330,
+            "pos_rate": 0.1145,
+            "auroc": 0.6636031288205201,
+            "auprc": 0.2029336318510413
+          },
+          {
+            "subgroup_col": "race",
+            "subgroup": "missing",
+            "n": 317,
+            "positives": 16,
+            "pos_rate": 0.0505,
+            "auroc": 0.6771179401993356,
+            "auprc": 0.10692556389492067
+          },
+          {
+            "subgroup_col": "race",
+            "subgroup": "Hispanic",
+            "n": 308,
+            "positives": 29,
+            "pos_rate": 0.0942,
+            "auroc": 0.7142504016808799,
+            "auprc": 0.24831345211987677
+          },
+          {
+            "subgroup_col": "race",
+            "subgroup": "Other",
+            "n": 220,
+            "positives": 18,
+            "pos_rate": 0.0818,
+            "auroc": 0.6276127612761275,
+            "auprc": 0.12373067793741761
+          },
+          {
+            "subgroup_col": "race",
+            "subgroup": "Asian",
+            "n": 104,
+            "positives": 12,
+            "pos_rate": 0.1154,
+            "auroc": 0.7789855072463768,
+            "auprc": 0.32527110117675806
+          }
+        ],
+        "gender": [
+          {
+            "subgroup_col": "gender",
+            "subgroup": "Female",
+            "n": 8080,
+            "positives": 964,
+            "pos_rate": 0.1193,
+            "auroc": 0.6818571438567521,
+            "auprc": 0.24968571243492088
+          },
+          {
+            "subgroup_col": "gender",
+            "subgroup": "Male",
+            "n": 6818,
+            "positives": 731,
+            "pos_rate": 0.1072,
+            "auroc": 0.6672478428945364,
+            "auprc": 0.19930928320380734
+          }
+        ],
+        "age": [
+          {
+            "subgroup_col": "age",
+            "subgroup": "[70-80)",
+            "n": 3915,
+            "positives": 500,
+            "pos_rate": 0.1277,
+            "auroc": 0.6565592972181552,
+            "auprc": 0.22602325906801213
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[60-70)",
+            "n": 3382,
+            "positives": 382,
+            "pos_rate": 0.113,
+            "auroc": 0.6568464223385688,
+            "auprc": 0.21982098626644758
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[50-60)",
+            "n": 2479,
+            "positives": 263,
+            "pos_rate": 0.1061,
+            "auroc": 0.6955515366981921,
+            "auprc": 0.24941878864317063
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[80-90)",
+            "n": 2439,
+            "positives": 297,
+            "pos_rate": 0.1218,
+            "auroc": 0.6596339995032805,
+            "auprc": 0.2145366321249719
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[40-50)",
+            "n": 1374,
+            "positives": 115,
+            "pos_rate": 0.0837,
+            "auroc": 0.6306730669613565,
+            "auprc": 0.14488883459108576
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[30-40)",
+            "n": 548,
+            "positives": 57,
+            "pos_rate": 0.104,
+            "auroc": 0.7400936148926287,
+            "auprc": 0.23454920397355256
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[90-100)",
+            "n": 369,
+            "positives": 31,
+            "pos_rate": 0.084,
+            "auroc": 0.6590952471845772,
+            "auprc": 0.26551922193709376
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[20-30)",
+            "n": 276,
+            "positives": 47,
+            "pos_rate": 0.1703,
+            "auroc": 0.8142711140016724,
+            "auprc": 0.4177231725423433
+          }
+        ]
+      },
+      "rare_code_buckets": [
+        {
+          "rarest_cat_train_freq_bucket": "<20 (dropped by featurizer)",
+          "n": 591,
+          "positives": 63,
+          "pos_rate": 0.1066,
+          "auroc": 0.7013287638287637
+        },
+        {
+          "rarest_cat_train_freq_bucket": "20-100",
+          "n": 1465,
+          "positives": 142,
+          "pos_rate": 0.0969,
+          "auroc": 0.6748160923211225
+        },
+        {
+          "rarest_cat_train_freq_bucket": "101-1000",
+          "n": 7303,
+          "positives": 871,
+          "pos_rate": 0.1193,
+          "auroc": 0.6781859217117626
+        },
+        {
+          "rarest_cat_train_freq_bucket": ">1000",
+          "n": 5539,
+          "positives": 619,
+          "pos_rate": 0.1118,
+          "auroc": 0.6687251270735648
+        }
+      ]
+    },
+    "xgboost_no_history": {
+      "selected_params": {
+        "max_depth": 6,
+        "min_child_weight": 1,
+        "best_iteration": 150
+      },
+      "metrics": {
+        "auroc": 0.6707,
+        "auroc_95ci": [
+          0.655,
+          0.6868
+        ],
+        "auprc": 0.2233,
+        "auprc_95ci": [
+          0.2002,
+          0.2489
+        ],
+        "brier": 0.0962,
+        "brier_95ci": [
+          0.0919,
+          0.1
+        ]
+      },
+      "subgroups": {
+        "race": [
+          {
+            "subgroup_col": "race",
+            "subgroup": "Caucasian",
+            "n": 11066,
+            "positives": 1290,
+            "pos_rate": 0.1166,
+            "auroc": 0.6712356792144026,
+            "auprc": 0.23561453117172648
+          },
+          {
+            "subgroup_col": "race",
+            "subgroup": "AfricanAmerican",
+            "n": 2883,
+            "positives": 330,
+            "pos_rate": 0.1145,
+            "auroc": 0.6555128250780425,
+            "auprc": 0.1926725299310768
+          },
+          {
+            "subgroup_col": "race",
+            "subgroup": "missing",
+            "n": 317,
+            "positives": 16,
+            "pos_rate": 0.0505,
+            "auroc": 0.6760797342192691,
+            "auprc": 0.09640637829411938
+          },
+          {
+            "subgroup_col": "race",
+            "subgroup": "Hispanic",
+            "n": 308,
+            "positives": 29,
+            "pos_rate": 0.0942,
+            "auroc": 0.7138796193301199,
+            "auprc": 0.23918463975269408
+          },
+          {
+            "subgroup_col": "race",
+            "subgroup": "Other",
+            "n": 220,
+            "positives": 18,
+            "pos_rate": 0.0818,
+            "auroc": 0.6364136413641364,
+            "auprc": 0.1309354515907486
+          },
+          {
+            "subgroup_col": "race",
+            "subgroup": "Asian",
+            "n": 104,
+            "positives": 12,
+            "pos_rate": 0.1154,
+            "auroc": 0.7699275362318841,
+            "auprc": 0.3535434161059598
+          }
+        ],
+        "gender": [
+          {
+            "subgroup_col": "gender",
+            "subgroup": "Female",
+            "n": 8080,
+            "positives": 964,
+            "pos_rate": 0.1193,
+            "auroc": 0.6742275749348672,
+            "auprc": 0.24394115764887764
+          },
+          {
+            "subgroup_col": "gender",
+            "subgroup": "Male",
+            "n": 6818,
+            "positives": 731,
+            "pos_rate": 0.1072,
+            "auroc": 0.6661986467538521,
+            "auprc": 0.19871271956802095
+          }
+        ],
+        "age": [
+          {
+            "subgroup_col": "age",
+            "subgroup": "[70-80)",
+            "n": 3915,
+            "positives": 500,
+            "pos_rate": 0.1277,
+            "auroc": 0.6537469985358711,
+            "auprc": 0.22347268447289997
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[60-70)",
+            "n": 3382,
+            "positives": 382,
+            "pos_rate": 0.113,
+            "auroc": 0.6440689354275742,
+            "auprc": 0.2105135033911153
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[50-60)",
+            "n": 2479,
+            "positives": 263,
+            "pos_rate": 0.1061,
+            "auroc": 0.7052048015813099,
+            "auprc": 0.24718277382645562
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[80-90)",
+            "n": 2439,
+            "positives": 297,
+            "pos_rate": 0.1218,
+            "auroc": 0.6481104226202266,
+            "auprc": 0.21147155983635682
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[40-50)",
+            "n": 1374,
+            "positives": 115,
+            "pos_rate": 0.0837,
+            "auroc": 0.6369237144731844,
+            "auprc": 0.1536346937592841
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[30-40)",
+            "n": 548,
+            "positives": 57,
+            "pos_rate": 0.104,
+            "auroc": 0.7274806160002858,
+            "auprc": 0.2492463487795368
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[90-100)",
+            "n": 369,
+            "positives": 31,
+            "pos_rate": 0.084,
+            "auroc": 0.5920022905134569,
+            "auprc": 0.22191086305690116
+          },
+          {
+            "subgroup_col": "age",
+            "subgroup": "[20-30)",
+            "n": 276,
+            "positives": 47,
+            "pos_rate": 0.1703,
+            "auroc": 0.8188237480256436,
+            "auprc": 0.44757735286013195
+          }
+        ]
+      },
+      "rare_code_buckets": [
+        {
+          "rarest_cat_train_freq_bucket": "<20 (dropped by featurizer)",
+          "n": 591,
+          "positives": 63,
+          "pos_rate": 0.1066,
+          "auroc": 0.7029822029822029
+        },
+        {
+          "rarest_cat_train_freq_bucket": "20-100",
+          "n": 1465,
+          "positives": 142,
+          "pos_rate": 0.0969,
+          "auroc": 0.6636804956724475
+        },
+        {
+          "rarest_cat_train_freq_bucket": "101-1000",
+          "n": 7303,
+          "positives": 871,
+          "pos_rate": 0.1193,
+          "auroc": 0.6697190889696181
+        },
+        {
+          "rarest_cat_train_freq_bucket": ">1000",
+          "n": 5539,
+          "positives": 619,
+          "pos_rate": 0.1118,
+          "auroc": 0.6696284329563812
+        }
+      ]
+    }
+  },
+  "paired_comparisons": {
+    "xgboost_minus_lr": {
+      "auroc": {
+        "diff": 0.015159444633236707,
+        "ci95": [
+          0.00857553552491982,
+          0.022006461069693978
+        ],
+        "share_diff_le_0": 0.0
+      },
+      "auprc": {
+        "diff": 0.017090185320848106,
+        "ci95": [
+          0.008591053299494722,
+          0.02774593995697716
+        ],
+        "share_diff_le_0": 0.0
+      }
+    },
+    "xgboost_minus_xgboost_no_history": {
+      "auroc": {
+        "diff": 0.004924084250987115,
+        "ci95": [
+          0.0005063115227737502,
+          0.009422955773258647
+        ],
+        "share_diff_le_0": 0.015
+      },
+      "auprc": {
+        "diff": 0.0030377061549690665,
+        "ci95": [
+          -0.0015150390380813047,
+          0.008271104489830322
+        ],
+        "share_diff_le_0": 0.078
+      }
+    }
+  },
+  "shap_top_features": {
+    "num__number_inpatient": 0.2331800013780594,
+    "cat__discharge_disposition_id_1": 0.15097999572753906,
+    "num__prior_encounters_in_data": 0.12161999940872192,
+    "cat__payer_code_missing": 0.05040000006556511,
+    "cat__diag_1_chapter_circulatory": 0.04633999988436699,
+    "num__number_diagnoses": 0.04611999914050102,
+    "num__age_num": 0.038989998400211334,
+    "cat__discharge_disposition_id_22": 0.03871000185608864,
+    "cat__diabetesMed_No": 0.033879999071359634,
+    "cat__discharge_disposition_id_3": 0.03373999893665314,
+    "num__number_emergency": 0.03245000168681145,
+    "num__time_in_hospital": 0.02806999906897545,
+    "num__num_lab_procedures": 0.02457999996840954,
+    "diag__403": 0.02377999946475029,
+    "num__num_medications": 0.023099999874830246,
+    "cat__A1Cresult_missing": 0.019020000472664833,
+    "cat__medical_specialty_missing": 0.018200000748038292,
+    "cat__diabetesMed_Yes": 0.01582000032067299,
+    "cat__insulin_No": 0.015780000016093254,
+    "cat__metformin_No": 0.015329999849200249
+  }
+}
